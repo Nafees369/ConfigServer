@@ -1,0 +1,23 @@
+# Example configuration
+server:
+  port: 8081
+
+spring:
+  application:
+    name: student-service
+  datasource:
+    url: jdbc:h2:mem:studentdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka/}
+    register-with-eureka: true
+    fetch-registry: true
