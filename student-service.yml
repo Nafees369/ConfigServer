@@ -8,8 +8,8 @@ spring:
   datasource:
     url: jdbc:h2:mem:studentdb
     driverClassName: org.h2.Driver
-    username: sa
-    password: password
+    username:
+    password:
   jpa:
     hibernate:
       ddl-auto: update
